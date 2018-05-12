@@ -4,6 +4,9 @@ import React from "react";
 import AppBar from "./components/appBar";
 import Landing from "./components/landing";
 import { ScrollView } from "./components/core/layout";
+import Projects from "./components/projects";
+import Header from "./components/header";
+import Contact from "./components/contact";
 
 const theme = createMuiTheme({
   palette: {
@@ -15,7 +18,10 @@ const App = () => (
     <React.Fragment>
       <AppBar />
       <ScrollView>
+        <Header />
         <Landing />
+        <Projects />
+        <Contact />
       </ScrollView>
     </React.Fragment>
   </MuiThemeProvider>

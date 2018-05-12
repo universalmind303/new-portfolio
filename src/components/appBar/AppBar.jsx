@@ -38,7 +38,7 @@ const handleLinkedInPress = () => window.open("https://www.linkedin.com/in/cory-
 function MyAppBar() {
   return (
     <AppBarContainer>
-      <AppBar position="absolute" color="primary">
+      <AppBar position="fixed" color="primary">
         <Toolbar>
           <FlexTypography className="flex" variant="title" color="inherit">
             Cory Grinstead
