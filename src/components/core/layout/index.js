@@ -20,3 +20,7 @@ export const Avatar = styled.img`
   height: 200px;
   width: 200px;
 `;
+
+export const Bold = styled.div`
+  font-weight: bold;
+`;

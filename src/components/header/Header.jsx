@@ -4,7 +4,7 @@ import styled from "styled-components";
 import PortfolioPic from "../../assets/croppedPortfolioPic.jpg";
 
 const Container = styled.div`
-  height: 400px;
+  height: 350px;
   background: blue;
 `;
 
