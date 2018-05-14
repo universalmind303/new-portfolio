@@ -12,7 +12,5 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY package.json /usr/src/app/package.json
 RUN npm install
 RUN npm install react-scripts@1.1.1 -g --silent
-RUN ls  node_modules/material-ui -a
-
 # start app
 CMD ["npm", "start"]
