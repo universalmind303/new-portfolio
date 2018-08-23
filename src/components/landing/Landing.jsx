@@ -15,7 +15,7 @@ export default () => (
         <div>
           <h4>
             Cory is a Minneapolis based software engineer specializing in
-            fullstack web development. He has experience developing applications
+            full-stack web development. He has experience developing applications
             using several leading frameworks and technologies, among them React,
             Angular, Node.js, ES6, C#, SQL, MongoDB and many more!
           </h4>
