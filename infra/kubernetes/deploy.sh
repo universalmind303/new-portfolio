@@ -8,6 +8,8 @@ PROJECT_ID="$(gcloud config get-value project -q)"
 ENV=devl
 IMAGE=new-portfolio-$ENV
 
+./delete.sh
+
 kubectl run new-portfolio \
     --image=gcr.io/$PROJECT_ID/$IMAGE:latest \
     --port 80 \

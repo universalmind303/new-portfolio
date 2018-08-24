@@ -1,4 +1,4 @@
-import deepPurple from "@material-ui/core/colors/deepPurple";
+import deepOrange from "@material-ui/core/colors/deepOrange";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import React from "react";
 import AppBar from "./components/appBar";
@@ -10,7 +10,7 @@ import Contact from "./components/contact";
 
 const theme = createMuiTheme({
   palette: {
-    primary: deepPurple
+    primary: deepOrange
   }
 });
 const App = () => (
