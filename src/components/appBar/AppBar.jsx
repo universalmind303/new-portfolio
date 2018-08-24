@@ -1,7 +1,7 @@
-import { Button } from 'material-ui';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import Typography from 'material-ui/Typography';
+import { Button } from '@material-ui/core';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 import React from 'react';
 import styled from 'styled-components';
 import Github from '../../assets/GitHub.png';

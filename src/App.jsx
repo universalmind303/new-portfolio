@@ -1,5 +1,5 @@
-import deepPurple from "material-ui/colors/deepPurple";
-import { MuiThemeProvider, createMuiTheme } from "material-ui/styles";
+import deepPurple from "@material-ui/core/colors/deepPurple";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import React from "react";
 import AppBar from "./components/appBar";
 import Landing from "./components/landing";
