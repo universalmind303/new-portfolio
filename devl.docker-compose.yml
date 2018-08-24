@@ -3,9 +3,9 @@ version: '3.5'
 services:
 
   portfolio-prod:
-    container_name: portfolio-prod
+    container_name: portfolio-devl
     build:
       context: .
-      dockerfile: Dockerfile-prod
+      dockerfile: devl.Dockerfile
     ports:
       - '80:80'

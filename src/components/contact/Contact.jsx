@@ -22,15 +22,15 @@ const StyledTextField = styled(TextField)`
   width: 100%;
 `
 class Contact extends Component {
-  state = {
-    name: undefined,
-    email: undefined,
-    message: undefined
-  };
   constructor(props) {
     super(props)
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.state = {
+      name: undefined,
+      email: undefined,
+      message: undefined,
+    }
   }
   handleChange(e) {
     console.log(e.target.id)
