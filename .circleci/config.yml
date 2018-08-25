@@ -17,3 +17,13 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn test
+  deploy:
+    docker:
+    - image: circleci/python:.7-jessie
+    steps:
+      - run:
+          name: Upload to Google
+          command: python3 ./deploy/upload.py
+      - run:
+          name: Deploy to Google
+          command: python3 ./deploy/deploy.py
