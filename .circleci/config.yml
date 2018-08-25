@@ -23,10 +23,9 @@ jobs:
     steps:
       - run:
           name: Upload to Google
-          command: python3 ../deploy/upload.py
-      - run:
-          name: Deploy to Google
-          command: python3 ../deploy/deploy.py
+          command: ls
+      # - run:
+      #     name: Deploy to Google
 
 workflows:
   version: 2
