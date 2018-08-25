@@ -1,7 +1,7 @@
-import React from "react";
-import { Center, Avatar, PaddedContainer } from "../core/layout";
-import styled from "styled-components";
-import PortfolioPic from "../../assets/croppedPortfolioPic.jpg";
+import React from 'react';
+import styled from 'styled-components';
+import PortfolioPic from '../../assets/croppedPortfolioPic.jpg';
+import { Avatar, Center, PaddedContainer } from '../core/layout';
 
 const Container = styled.div`
   height: 350px;
@@ -13,7 +13,7 @@ export default () => (
     <PaddedContainer>
       <Center>
         <Avatar src={PortfolioPic} alt="me" />
-        <h2>Cory Grinstead</h2> <h3>Software Developer</h3>{" "}
+        <h2>Cory Grinstead</h2> <h3>Software Developer</h3>{' '}
       </Center>
     </PaddedContainer>
   </Container>

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^1.5.1",
+    "parcel-bundler": "^1.9.7",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -11,8 +12,8 @@
     "styled-components": "^3.2.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "parcel src/index.html -p 3000",
+    "build": "parcel build index.html",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

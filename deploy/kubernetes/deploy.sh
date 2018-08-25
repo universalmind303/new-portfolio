@@ -18,5 +18,4 @@ kubectl run new-portfolio \
 kubectl expose deployment new-portfolio \
     --type=LoadBalancer \
     --port 80 \
-    --target-port 80 \
-    -o yaml > ./deployments.yml
+    --target-port 80 

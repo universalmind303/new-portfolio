@@ -5,10 +5,10 @@ services:
   portfolio-dev:
     container_name: portfolio-dev
     build:
-      context: .
-      dockerfile: local.Dockerfile
+      context: ../
+      dockerfile: docker/local.Dockerfile
     volumes:
-      - '.:/usr/src/app'
+      - '../:/usr/src/app'
       - '/usr/src/app/node_modules'
     ports:
       - '3000:3000'

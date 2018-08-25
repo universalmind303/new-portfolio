@@ -5,8 +5,8 @@ services:
   portfolio-prod:
     container_name: portfolio-devl
     build:
-      context: .
-      dockerfile: devl.Dockerfile
+      context: ../
+      dockerfile: docker/devl.Dockerfile
     ports:
       - '80:80'
       

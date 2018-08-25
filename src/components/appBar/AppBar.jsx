@@ -28,7 +28,7 @@ const StyledButton = styled(Button)`
     min-width: 50px;
   }
 
-`
+`;
 
 // eslint-disable-next-line
 const handleGithubPress = () => window.open("https://www.github.com/universalmind303");
@@ -48,7 +48,7 @@ function MyAppBar() {
               <Icon src={Github} alt="github" />
             </StyledButton>
             <StyledButton color="inherit" >
-              <Icon src={LinkedIn} alt="linkedin" onClick={handleLinkedInPress}/>
+              <Icon src={LinkedIn} alt="linkedin" onClick={handleLinkedInPress} />
             </StyledButton>
           </IconContainer>
         </Toolbar>

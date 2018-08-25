@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { Container, Center, PaddedContainer } from "../core/layout";
-import styled from "styled-components";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Center, Container, PaddedContainer } from '../core/layout';
 
 const StyledForm = styled.form`
   display: flex;
@@ -36,7 +36,7 @@ class Contact extends Component {
     console.log(e.target.id);
     this.setState({
       [e.target.id]: e.target.value,
-    })
+    });
   }
   handleSubmit() {
     console.log(this.state);
@@ -81,7 +81,7 @@ class Contact extends Component {
                 multiline
                 margin="normal"
                 required
-              />{" "}
+              />{' '}
             </FormRow>
             <FormRow>
               <Left>
