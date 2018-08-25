@@ -19,7 +19,7 @@ jobs:
       - run: yarn test
   deploy:
     docker:
-    - image: circleci/python:3.7-jessie
+    - image: circleci/python:3.6.1
     steps:
       - run:
           name: Upload to Google
