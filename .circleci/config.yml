@@ -24,7 +24,7 @@ jobs:
       - checkout 
       - run:
           name: Upload to Google
-          command: cd ../deploy && python3 upload.py
+          command: cd deploy && python3 upload.py
       - run:
           name: Deploy to Google
           command: cd ../deploy && python3 deploy.py
