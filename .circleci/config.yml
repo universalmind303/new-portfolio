@@ -23,10 +23,10 @@ jobs:
     steps:
       - run:
           name: Upload to Google
-          command: python3 ./deploy/upload.py
+          command: python3 ../deploy/upload.py
       - run:
           name: Deploy to Google
-          command: python3 ./deploy/deploy.py
+          command: python3 ../deploy/deploy.py
 
 workflows:
   version: 2
