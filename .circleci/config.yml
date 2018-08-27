@@ -25,7 +25,7 @@ jobs:
       - image: gcr.io/portfolio-203912/circleci-gcloud
         auth:
           username: _json_key
-          password: $pw
+          password: $GCLOUD_SERVICE_KEY
     steps:
       - checkout
       - run:
@@ -36,7 +36,7 @@ jobs:
     - image: gcr.io/portfolio-203912/circleci-gcloud
       auth:
         username: _json_key
-        password: $(cat ~/.gcloud/key.json)
+        password: $GCLOUD_SERVICE_KEY
     steps:
       - checkout 
       - run:
