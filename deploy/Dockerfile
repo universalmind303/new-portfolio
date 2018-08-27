@@ -15,7 +15,7 @@ RUN sh gcloud-init.sh
 RUN yum install -y docker
 
 # Python 3
-RUN yum install https://centos7.iuscommunity.org/ius-release.rpm
-RUN yum install python36u
-
+RUN yum install -y  https://centos7.iuscommunity.org/ius-release.rpm
+RUN yum install -y python36u
+RUN alias python3='python3.6'
 CMD ["bash"]
