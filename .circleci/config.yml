@@ -17,10 +17,9 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn test
+      - run: echo $GCLOUD_SERVICE_KEY
 
   upload:
-    environment:
-      pw: $(cat $HOME/.gcloud/key.json)
     docker:
       - image: gcr.io/portfolio-203912/circleci-gcloud
         auth:
