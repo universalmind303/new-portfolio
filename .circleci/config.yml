@@ -21,6 +21,9 @@ jobs:
   upload:
     docker:
       - image: gcr.io/portfolio-203912/circleci-gcloud
+        auth:
+          username: _json_key
+          password: $(cat ~/.gcloud/key.json)
     steps:
       - checkout
       - run:
@@ -29,6 +32,9 @@ jobs:
   deploy:
     docker:
     - image: gcr.io/portfolio-203912/circleci-gcloud
+      auth:
+        username: _json_key
+        password: $(cat ~/.gcloud/key.json)
     steps:
       - checkout 
       - run:
