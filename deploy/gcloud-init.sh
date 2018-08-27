@@ -2,7 +2,7 @@
 set -eu
 
 mkdir -p $HOME/.gcloud
-echo $GCLOUD_SERVICE_KEY | base64 -d > ${HOME}/.gcloud/key.json
+echo $GCLOUD_SERVICE_KEY > ${HOME}/.gcloud/key.json
 gcloud auth activate-service-account --key-file ${HOME}/.gcloud/key.json
 gcloud config set project $GCLOUD_PROJECT_ID
 gcloud --quiet config set container/cluster $GCLOUD_CLUSTER_NAME
