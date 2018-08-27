@@ -19,11 +19,13 @@ jobs:
       - run: yarn test
 
   upload:
+    environment:
+      pw: $(cat $HOME/.gcloud/key.json)
     docker:
       - image: gcr.io/portfolio-203912/circleci-gcloud
         auth:
           username: _json_key
-          password: $(cat ~/.gcloud/key.json)
+          password: $pw
     steps:
       - checkout
       - run:
@@ -54,7 +56,7 @@ workflows:
               only: master
       - deploy:
           requires:
-            - build
+            - upload
           filters:
             branches:
               only: master
