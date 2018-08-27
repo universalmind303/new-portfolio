@@ -18,5 +18,4 @@ RUN yum install -y docker
 RUN yum install -y  https://centos7.iuscommunity.org/ius-release.rpm
 RUN yum install -y python36u
 RUN mv /usr/bin/python3.6 /usr/bin/python3
-RUN python3 --version
 CMD ["bash"]
