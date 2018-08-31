@@ -30,6 +30,7 @@ jobs:
           name: Upload to Cloud
           command: |
             cd deploy 
+            ls
             ./upload.sh
   deploy:
     docker:
