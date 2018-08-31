@@ -3,6 +3,7 @@ ARG GCLOUD_SERVICE_KEY
 ARG GCLOUD_CLUSTER_NAME
 ARG GCLOUD_COMPUTE_ZONE
 ARG GCLOUD_PROJECT_ID
+VOLUME ["/var/run/docker.sock"]
 
 
 # GCloud
@@ -11,12 +12,9 @@ RUN sh gcloud-install.sh
 ADD ./gcloud-init.sh /gcloud-init.sh
 RUN sh gcloud-init.sh
 
-# Docker
-RUN yum install -y docker
 
 # Python 3
 RUN yum install -y  https://centos7.iuscommunity.org/ius-release.rpm
 RUN yum install -y python36u
 RUN mv /usr/bin/python3.6 /usr/bin/python3
-RUN systemctl start docker
 CMD ["bash"]

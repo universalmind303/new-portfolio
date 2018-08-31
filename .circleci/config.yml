@@ -20,23 +20,24 @@ jobs:
 
   upload:
     docker:
-      - image: gcr.io/portfolio-203912/circleci-gcloud
-        auth:
-          username: _json_key
-          password: $GCLOUD_SERVICE_KEY
+      - image: circleci/python:3.6
+      - image: google/cloud-sdk:latest
     steps:
       - checkout
+      - run: 
+          name: Login to GCloud
+          command: cd deploy && python3 gcloud-init.py
       - run:
           name: Upload to Cloud
           command: cd deploy && python3 upload.py
   deploy:
     docker:
-    - image: gcr.io/portfolio-203912/circleci-gcloud
-      auth:
-        username: _json_key
-        password: $GCLOUD_SERVICE_KEY
+    - image: google/cloud-sdk:latest
     steps:
       - checkout 
+      - run: 
+          name: Login to GCloud
+          command: cd deploy && python3 gcloud-init.py
       - run:
           name: Deploy to Google
           command: cd deploy && python3 deploy.py
