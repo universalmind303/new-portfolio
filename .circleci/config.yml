@@ -28,7 +28,9 @@ jobs:
       - setup_remote_docker
       - run:
           name: Upload to Cloud
-          command: cd deploy && ./upload.sh
+          command: |
+            cd deploy 
+            ./upload.sh
   deploy:
     docker:
     - image: google/cloud-sdk:latest
@@ -36,7 +38,8 @@ jobs:
       - checkout 
       - run: 
           name: Login to GCloud
-          command: cd deploy && python3 gcloud-init.py
+          command: |
+            cd deploy && python3 gcloud-init.py
       - run:
           name: Deploy to Google
           command: cd deploy && python3 deploy.py
