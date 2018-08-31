@@ -20,15 +20,19 @@ jobs:
 
   upload:
     docker:
-      - image: docker:17.05.0-ce-git
+    - image: google/cloud-sdk:latest
     steps:
       - checkout
       - setup_remote_docker
       - run:
+          name: Setup GCloud
+          command: |
+            cd deploy
+            ./gcloud-init.sh
+      - run:
           name: Upload to Cloud
           command: |
             cd deploy 
-            ls
             ./upload.sh
   deploy:
     docker:
