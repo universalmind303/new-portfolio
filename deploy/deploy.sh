@@ -4,4 +4,4 @@ set -eu
 
 . ./set_env.sh
 
-kubectl set image deployment/${PROJECT_NAME} ${PROJECT_NAME}=${HOST_NAME}/${PROJECT_ID}/${IMAGE}:${TAG}
+kubectl set image deployment/${GCLOUD_PROJECT_NAME} ${GCLOUD_PROJECT_NAME}=${HOST_NAME}/${GCLOUD_PROJECT_ID}/${IMAGE}:${TAG}
