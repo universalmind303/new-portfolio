@@ -26,14 +26,9 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-
-      - run: 
-          name: build image
-          command: | 
-            docker build -f docker/devl.Dockerfile -t new-portfolio:latest .
       - run:
           name: Upload to Cloud
-          command: cd deploy && python3 upload.py
+          command: cd deploy && ./upload.sh
   deploy:
     docker:
     - image: google/cloud-sdk:latest

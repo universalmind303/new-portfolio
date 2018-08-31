@@ -9,3 +9,5 @@ create runtime image
 
 store key to path ~/.gcloud/key.json
 add same key to env variable in circleci GUI
+
+use -set-remote-docker  in the build 
