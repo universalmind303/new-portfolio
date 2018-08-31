@@ -38,14 +38,17 @@ jobs:
     docker:
     - image: google/cloud-sdk:latest
     steps:
-      - checkout 
-      - run: 
-          name: Login to GCloud
+      - checkout
+      - run:
+          name: Setup GCloud
           command: |
-            cd deploy && python3 gcloud-init.py
+            cd deploy
+            ./gcloud-init.sh
       - run:
           name: Deploy to Google
-          command: cd deploy && python3 deploy.py
+          command: |
+            cd deploy
+            ./deploy.sh
 
 workflows:
   version: 2
