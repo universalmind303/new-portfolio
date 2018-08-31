@@ -60,8 +60,6 @@ workflows:
             branches:
               only: master
       - deploy:
-          requires:
-            - upload
           filters:
             branches:
               only: master
