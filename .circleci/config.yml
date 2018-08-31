@@ -28,7 +28,7 @@ jobs:
       - run: 
           name: build image
           command: | 
-            docker build -f docker/devl.Dockerfile -t new-portfolio:latest
+            docker build -f docker/devl.Dockerfile -t new-portfolio:latest .
       - run:
           name: Upload to Cloud
           command: cd deploy && python3 upload.py
