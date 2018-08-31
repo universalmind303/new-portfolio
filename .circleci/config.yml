@@ -22,13 +22,13 @@ jobs:
     docker:
       - image: docker:17.05.0-ce-git
       - image: circleci/python:3.6
-
       - image: google/cloud-sdk:latest
     steps:
       - checkout
       - run: 
-          name: Login to GCloud
-          command: cd deploy && python3 gcloud-init.py
+          name: build image
+          command: | 
+            docker build -f docker/devl.Dockerfile -t new-portfolio:latest
       - run:
           name: Upload to Cloud
           command: cd deploy && python3 upload.py
