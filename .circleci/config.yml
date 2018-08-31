@@ -1,23 +1,5 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/node:7.10
-    working_directory: ~/repo
-
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
-      - run: yarn install
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-      - run: yarn test
-
   upload:
     docker:
     - image: google/cloud-sdk:latest
@@ -52,14 +34,15 @@ jobs:
 
 workflows:
   version: 2
-  build--upload-deploy:
+  upload-deploy:
     jobs:
-      - build
       - upload:
           filters:
             branches:
               only: master
       - deploy:
+          requires:
+            - upload
           filters:
             branches:
               only: master
