@@ -24,6 +24,7 @@ jobs:
       - image: circleci/python:3.6
       - image: google/cloud-sdk:latest
     steps:
+      - setup_remote_docker
       - checkout
       - run: 
           name: build image
