@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/sh 
+
 set -eu
 
 . ./set_env.sh
