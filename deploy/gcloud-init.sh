@@ -11,4 +11,6 @@ sudo gcloud config set project $GCLOUD_PROJECT_ID
 sudo gcloud --quiet config set container/cluster $GCLOUD_PROJECT_NAME
 sudo gcloud config set compute/zone ${GCLOUD_COMPUTE_ZONE}
 sudo gcloud --quiet container clusters get-credentials $GCLOUD_PROJECT_NAME
+sudo gcloud auth configure-docker
+
 
