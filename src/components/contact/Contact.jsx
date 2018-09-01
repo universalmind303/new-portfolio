@@ -57,7 +57,7 @@ class Contact extends Component {
                 value={name}
                 onChange={this.handleChange}
                 margin="normal"
-                required
+
               />
             </FormRow>
             <FormRow>
@@ -68,7 +68,7 @@ class Contact extends Component {
                 onChange={this.handleChange}
                 margin="normal"
                 type="email"
-                required
+
               />
             </FormRow>
             <FormRow>
@@ -80,7 +80,7 @@ class Contact extends Component {
                 onChange={this.handleChange}
                 multiline
                 margin="normal"
-                required
+
               />{' '}
             </FormRow>
             <FormRow>
