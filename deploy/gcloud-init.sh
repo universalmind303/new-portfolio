@@ -5,7 +5,6 @@ set -eu
 . ./set_env.sh
 
 mkdir -p $HOME/.gcloud 
-echo "$GCLOUD_SERVICE_KEY" | base64 -d
 echo "$GCLOUD_SERVICE_KEY" | base64 -d > ${HOME}/.gcloud/key.json
 gcloud auth activate-service-account --key-file ${HOME}/.gcloud/key.json
 gcloud config set project $GCLOUD_PROJECT_ID
