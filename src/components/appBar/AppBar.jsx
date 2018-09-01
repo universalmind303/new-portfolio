@@ -30,6 +30,11 @@ const StyledButton = styled(Button)`
 
 `;
 
+const StyledAppBar = styled(AppBar)`
+  max-width: 100vw;
+  left: 0 !important;
+`;
+
 // eslint-disable-next-line
 const handleGithubPress = () => window.open("https://www.github.com/universalmind303");
 // eslint-disable-next-line
