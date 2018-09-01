@@ -63212,7 +63212,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  height: 350px;\n  background: blue;\n'], ['\n  height: 350px;\n  background: blue;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  height: 350px;\n  background: #2196f3;\n'], ['\n  height: 350px;\n  background: #2196f3;\n']);
 
 var _react = require('react');
 

@@ -5,7 +5,7 @@ import { Avatar, Center, PaddedContainer } from '../core/layout';
 
 const Container = styled.div`
   height: 350px;
-  background: blue;
+  background: #2196f3;
 `;
 
 export default () => (
