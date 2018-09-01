@@ -63081,7 +63081,7 @@ exports.default = function () {
           _react2.default.createElement(
             'h4',
             null,
-            'Cory is a Minneapolis based software engineer specializing in full-stack web development. He has experience developing applications using several leading frameworks and technologies, among them React, Angular, Node.js, ES6, C#, SQL, MongoDB and many more!'
+            'Cory is a Minneapolis based software engineer specializing in full-stack web development. He has experience developing applications using several leading frameworks and technologies, among them JavaScript, Nodejs, React, Angular, Java, Spring Boot, C#, Dotnet Core, and many more'
           )
         )
       )
