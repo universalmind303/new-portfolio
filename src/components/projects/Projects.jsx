@@ -34,7 +34,10 @@ export default () => (
         </span>
         <span>Smart Camper has been my personal endeaver to automate every aspect of my tiny house on wheels.</span>
         <br />
-        <span>Smart Camper was built using React-Native, and Node.js</span>
+        <span>Smart Camper was built using React-Native, and Node.js I utilized a Raspberry Pi to interface with hardware that controls
+          the climate and lights.
+        </span>
+        <br />
       </div>
     </PaddedContainer>
   </Container>

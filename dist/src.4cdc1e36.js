@@ -63182,8 +63182,9 @@ exports.default = function () {
         _react2.default.createElement(
           'span',
           null,
-          'Smart Camper was built using React-Native, and Node.js'
-        )
+          'Smart Camper was built using React-Native, and Node.js I utilized a Raspberry Pi to interface with hardware that controls the climate and lights.'
+        ),
+        _react2.default.createElement('br', null)
       )
     )
   );
